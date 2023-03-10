@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGM Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="box">
+        <h1><u>STUDENT ENROLLMENT  FORM</u></h1>
+        <div class="container">
+            <img src="pic.jpg"alt="">
+            <div class="form">
+                <center><h2 style="color: #660ae7;"><u>Enrollment Form</u></h2></center> 
+                <form>
+                    <div class="f_name">
+                        <label for="f_name">First Name: </label>
+                        <input type="text" id="f_name" placeholder="" required>
+                    </div>
+                    <div class="l_name">
+                        <label for="l_name">Last Name: </label>
+                        <input type="text" id="l_name" placeholder="" required>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Gender: </label>
+                        <input type="radio" name="male-female" id="male" value="Male" checked required>Male
+                        <input type="radio" name="male-female" id="female" value="Female">Female
+                    </div>
+                    
+                    <div class="phn">
+                        <label for="phn">Contact Number: </label>
+                        <input type="number" id="phn" placeholder="" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" placeholder="" required>
+                    </div>
+                    <div class="image">
+                        <label for="url">Image URL <span>(jpg,jpeg,png format)</span></label>
+                        <input type="url" id="url" placeholder="Ex. https://abc.jpg"
+                        value="https://cdn-icons-png.flaticon.com/512/1253/1253654.png"required>
+                    </div>  
+                    <div class="skills">
+                        <label for="skills">Skills: </label>           
+                        <input type="checkbox" value="HTML5" id="cpp" class="checkbox" checked>HTML5
+                        <input type="checkbox" value="Python" id="c" class="checkbox">Python
+                        <input type="checkbox" value="SQL" id="html" class="checkbox">SQL
+                        <input type="checkbox" value="Front-End" id="css" class="checkbox">Front-End
+                        <input type="checkbox" value="Data Science" id="css" class="checkbox">Data Science
+                    </div>
+                    <div class="button">
+                        <button type="button" id="submit">ENROLL</button>
+                        <button type="reset" id="reset">RESET</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+<div class="output">
+                <h2 style="color: #7e4f1d;">STUDENT DETAILS</h2>
+                <br>
+                <div class="cardContainer" id="cardContainer">
+                </div>
+            </div>
+        </div>
+    <script src="form.js"></script>
+</body>
+</html>

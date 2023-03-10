@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+img {
+  height: 100%;
+  width: 50%;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f7d9aa;
+  background-image: linear-gradient(to bottom,  #9ea9c2,#7a5d2e);
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  color: #222222;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  height: 85vh;
+  display: flex;
+  flex-basis: 50%;
+  background-color: #92f0a6;
+  color: #222222;
+  border-radius: 1rem;
+  font-size: 16px;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+.form {
+  padding: 2rem;
+  width: 50%;
+  height: 100%;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="number"] {
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid #222222;
+  border-radius: 0.3rem;
+  background-color: #f0f0f0;
+  transition: border-color 0.3s ease-in-out;
+  color: #333333;
+}
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="url"]:focus,
+.form input[type="number"]:focus {
+  border-color: #ffcc33;
+}
+.form button {
+  width: 30%;
+  padding: 0.4rem 0;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+  margin-top: 0.6rem;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+#submit {
+  background-color: yellow;
+  color: #1c1818;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+#submit:hover {
+  background-color: yellowgreen;
+  color: #ffffff;
+}
